@@ -1,26 +1,148 @@
 #header {
   width: 100%;
-  height: 100vh;
-  padding: 2rem 3rem;
+  height: 60rem;
+  position: relative;
 }
+
+.background-design {
+  width: 90rem;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+
+  position: absolute;
+  top: 0.7%;
+  left: 0.7%;
+  z-index: -1;
+}
+
+.contanier {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 6rem;
+}
+
 .nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &_logo {
     font-family: poppins, sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.11rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 1);
+    cursor: pointer;
   }
 
   &_menuIcon {
-    width: 1.2rem;
-    height: 0.8rem;
+    width: 1.7rem;
+    height: 1rem;
     cursor: pointer;
+  }
+  &_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    &--item {
+    }
+    &--link {
+      text-decoration: none;
+      color: black;
+      font-size: 0.9rem;
+      font-family: poppins;
+    }
   }
   &_remover {
     display: none;
   }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  // background-color: royalblue;
+  display: flex;
+  // padding: 9rem 0;
+
+  &_text {
+    flex: 50%;
+    height: 100%;
+    padding: 12rem 0;
+    // background-color: coral;
+
+    &--heading {
+      font-family: Noto sans, sans-serif;
+      font-weight: 400;
+      font-size: 3.7rem;
+      width: 45rem;
+      margin-bottom: 1.8rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &--description {
+      width: 38rem;
+      font-family: Noto sans, sans-serif;
+      font-size: 1.2rem;
+      line-height: 22px;
+      color: rgba(0, 0, 0, 0.8);
+      margin-bottom: 5rem;
+    }
+    &--buttons {
+      display: grid;
+      grid-template-columns: 17rem 17rem;
+      grid-template-rows: 5rem 5rem;
+      grid-row-gap: 8rem;
+      grid-column-gap: 0.5rem;
+      align-items: center;
+    }
+  }
+
+  &_image {
+    flex: 50%;
+    height: 100%;
+    padding: 11rem 0 0 5rem;
+    // background-color: coral;
+
+    &--actual {
+      width: 43rem;
+    }
+  }
+}
+
+.btn-1 {
+  width: 11rem;
+  height: 3.5rem;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: black;
+  font-size: 0.96rem;
+  // font-weight: 100;
+  cursor: pointer;
+}
+.btn-2 {
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  cursor: pointer;
+}
+.btn-3 {
+  width: 16rem;
+  font-size: 1.22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.7rem;
+  color: #8e8e8e;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.plus--icon {
+  width: 1.9rem;
+  height: 1.9rem;
 }

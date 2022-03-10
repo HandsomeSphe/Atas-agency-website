@@ -19,28 +19,70 @@
     /////////////////// HEADER ///////////////////////-->
 
     <header id="header">
-      <nav class="nav">
-        <div class="nav_logo">ATAS.</div>
-        <div class="nav_menuIcon">
+      <div class="background-design"></div>
+      <div class="contanier">
+        <!--/////////// NAVIGATIONAL BAR  ////////////////
+        /////////////////////////////////////////////////-->
+        <nav class="nav">
+          <div class="nav_logo">ATAS.</div>
+
+          <ul class="nav_list nav_remover">
+            <li class="nav_list--item">
+              <a href="#" class="nav_list--link" id="home_tab">Home</a>
+            </li>
+            <li class="nav_list--item">
+              <a href="#" class="nav_list--link" id="port_tab">Portfolio</a>
+            </li>
+            <li class="nav_list--item">
+              <a href="#" class="nav_list--link" id="services_tab">Services</a>
+            </li>
+            <li class="nav_list--item">
+              <a href="#" class="nav_list--link" id="contacts_tab">Contacts</a>
+            </li>
+          </ul>
+
           <svg class="nav_menuIcon">
             <use xlink:href="./Icons/SVG/sprite.svg#icon-mENI-iCON"></use>
           </svg>
+        </nav>
+        <!--/////////// MAIN CONTENT ////////////////////
+        /////////////////////////////////////////////////-->
+        <div class="content">
+          <div class="content_text">
+            <h1 class="content_text--heading">
+              <div class="head_text--1">Digital Solutions</div>
+              <div class="head_text--2">for your e-commerce</div>
+            </h1>
+            <div class="content_text--description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+              blandit nulla pellentesque est. Porta arcu, a, mauris cursus.
+              Tempor interdum consequat id faucibus sollicitudin neque ornare
+              tellus. Cursus gravida suspendisse ultrices vitae sed integer
+              cursus.
+            </div>
+            <div class="content_text--buttons">
+              <button class="btn-1">Need Website ?</button>
+              <button class="btn-2">Digital Marketing +</button>
+              <button class="btn-3">
+                <svg class="plus--icon">
+                  <use
+                    xlink:href="././Icons/SVG/sprite.svg#icon-More-Btn
+                    "
+                  ></use>
+                </svg>
+                Most Requested Service
+              </button>
+            </div>
+          </div>
+          <div class="content_image">
+            <img
+              src="./Images/Image and shadow.png"
+              alt="side image"
+              class="content_image--actual"
+            />
+          </div>
         </div>
-        <ul class="nav_list nav_remover">
-          <li class="nav_list--item">
-            <a href="#" class="nav_list--link">Home</a>
-          </li>
-          <li class="nav_list--item">
-            <a href="#" class="nav_list--link">Portfolio</a>
-          </li>
-          <li class="nav_list--item">
-            <a href="#" class="nav_list--link">Services</a>
-          </li>
-          <li class="nav_list--item">
-            <a href="#" class="nav_list--link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </header>
   </body>
 </html>
