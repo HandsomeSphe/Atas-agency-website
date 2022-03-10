@@ -2,6 +2,9 @@
   width: 100%;
   height: 60rem;
   position: relative;
+  @include respond(tab-port) {
+    height: 100vh;
+  }
   @include respond(s-phone) {
     height: 100vh;
   }
@@ -20,6 +23,12 @@
   top: 0.7%;
   left: 0.7%;
   z-index: -1;
+  @include respond(tab-port) {
+    width: 98%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   @include respond(s-phone) {
     width: 98%;
@@ -30,7 +39,6 @@
 
   @include respond(xs-phone) {
     width: 98%;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -41,6 +49,9 @@
   width: 100%;
   height: 100%;
   padding: 3rem 6rem;
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
   @include respond(s-phone) {
     padding: 2rem;
   }
@@ -89,8 +100,11 @@
 .content {
   width: 100%;
   height: 100%;
-  // background-color: royalblue;
   display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
   @include respond(s-phone) {
     flex-direction: column;
   }
@@ -102,7 +116,10 @@
     flex: 50%;
     height: 100%;
     padding: 12rem 0;
-    // background-color: coral;
+    @include respond(tab-port) {
+      height: auto;
+      padding: 8rem 0;
+    }
     @include respond(s-phone) {
       height: auto;
       padding: 7rem 0;
@@ -120,6 +137,10 @@
       margin-bottom: 1.8rem;
       display: flex;
       flex-direction: column;
+      @include respond(tab-port) {
+        width: 37rem;
+        font-size: 3.2rem;
+      }
       @include respond(s-phone) {
         width: 35rem;
         font-size: 3.3rem;
@@ -136,16 +157,24 @@
       line-height: 22px;
       color: rgba(0, 0, 0, 0.8);
       margin-bottom: 5rem;
+      @include respond(tab-port) {
+        width: 37rem;
+        font-size: 1.19rem;
+        line-height: normal;
+        margin-bottom: 3rem;
+      }
       @include respond(s-phone) {
         width: 35rem;
         font-size: 1.18rem;
         line-height: normal;
+        margin-bottom: 5rem;
       }
 
       @include respond(xs-phone) {
         width: 32rem;
         line-height: normal;
         font-size: 1.14rem;
+        margin-bottom: 5rem;
       }
     }
     &--buttons {
@@ -155,6 +184,9 @@
       grid-row-gap: 8rem;
       grid-column-gap: 0.5rem;
       align-items: center;
+      @include respond(tab-port) {
+        grid-row-gap: 5.8rem;
+      }
       @include respond(s-phone) {
         grid-row-gap: 5.5rem;
       }
@@ -168,6 +200,11 @@
     flex: 50%;
     height: 100%;
     padding: 11rem 0 0 5rem;
+    @include respond(tab-port) {
+      padding: 0;
+      height: 0;
+      flex: 0;
+    }
     @include respond(s-phone) {
       padding: 0;
       height: 0;
@@ -182,6 +219,9 @@
 
     &--actual {
       width: 43rem;
+      @include respond(tab-port) {
+        display: none;
+      }
       @include respond(s-phone) {
         display: none;
       }
