@@ -1,0 +1,25 @@
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-40rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 30%;
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(40rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+}
