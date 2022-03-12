@@ -55,6 +55,13 @@ html {
   position: relative;
 }
 
+@media only screen and (max-width: 48em) {
+  #header {
+    width: 102rem;
+    height: 65rem;
+  }
+}
+
 @media only screen and (max-width: 31em) {
   #header {
     height: 74rem;

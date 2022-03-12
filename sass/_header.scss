@@ -2,6 +2,10 @@
   width: 100%;
   height: 60rem;
   position: relative;
+  @include respond(tab-land) {
+    width: 102rem;
+    height: 65rem;
+  }
   @include respond(tablet) {
     height: 74rem;
     width: 100rem;
