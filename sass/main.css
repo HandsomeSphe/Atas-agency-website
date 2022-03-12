@@ -574,6 +574,13 @@ html {
   background-color: black;
   font-size: 0.96rem;
   cursor: pointer;
+  -webkit-transition: scale ease-in-out 0.5s;
+  transition: scale ease-in-out 0.5s;
+}
+
+.btn-1:hover {
+  -webkit-transform: scaleX(1.04);
+          transform: scaleX(1.04);
 }
 
 .btn-2 {
@@ -583,6 +590,13 @@ html {
   border: none;
   border-bottom: 0.1rem solid black;
   cursor: pointer;
+  -webkit-transition: scale ease-in-out 0.5s;
+  transition: scale ease-in-out 0.5s;
+}
+
+.btn-2:hover {
+  -webkit-transform: scaleX(1.04);
+          transform: scaleX(1.04);
 }
 
 .btn-3 {
@@ -602,6 +616,10 @@ html {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn-3:hover {
+  color: black;
 }
 
 .plus--icon {

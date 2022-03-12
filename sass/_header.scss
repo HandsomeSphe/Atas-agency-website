@@ -321,8 +321,11 @@
   color: rgba(255, 255, 255, 0.8);
   background-color: black;
   font-size: 0.96rem;
-  // font-weight: 100;
   cursor: pointer;
+  transition: scale ease-in-out 0.5s;
+  &:hover {
+    transform: scaleX(1.04);
+  }
 }
 .btn-2 {
   width: 12rem;
@@ -331,6 +334,10 @@
   border: none;
   border-bottom: 0.1rem solid black;
   cursor: pointer;
+  transition: scale ease-in-out 0.5s;
+  &:hover {
+    transform: scaleX(1.04);
+  }
 }
 .btn-3 {
   width: 15.5rem;
@@ -343,6 +350,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
 }
 .plus--icon {
   width: 1.9rem;
