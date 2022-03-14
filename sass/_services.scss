@@ -1,0 +1,148 @@
+#services {
+  width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+.services__contanier {
+  height: 53rem;
+  background-color: rgba(227, 227, 227, 0.5);
+  margin: 0.7rem;
+  padding: 15rem 6.5rem;
+  display: flex;
+  align-items: center;
+
+  @include respond(xs-phone) {
+    width: 100%;
+    padding: 7rem 3rem;
+    flex-direction: column;
+  }
+
+  &--text {
+    flex: 30%;
+    width: 100%;
+
+    & > .title {
+      font-size: 2.4rem;
+      font-weight: 400rem;
+      margin-bottom: 1rem;
+    }
+    & > .description {
+      width: 23rem;
+      height: auto;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+    }
+    & > .explore-btn {
+      width: 12rem;
+      height: 3.5rem;
+      color: rgba(255, 255, 255, 0.9);
+      background-color: black;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &--cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 28rem 28rem;
+    grid-template-rows: 15rem 15rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    // padding: 0 4rem 0 0;
+    @include respond(xs-phone) {
+      grid-template-columns: 15rem 15rem;
+      grid-template-rows: 8rem 8rem;
+    }
+  }
+}
+.service__card {
+  &--1,
+  &--2,
+  &--3,
+  &--4 {
+    background-color: white;
+    box-shadow: 4px 4px 54px rgba(196, 196, 196, 0.5);
+    border-radius: 5px;
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+
+    display: grid;
+    grid-template-columns: 4rem 20rem;
+    grid-template-rows: 3rem 7rem;
+    grid-row-gap: 0.1rem;
+    // grid-column-gap: 0.5rem;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 54px rgba(196, 196, 196, 0.1);
+    }
+
+    @include respond(xs-phone) {
+      padding: 0;
+      grid-template-columns: 2rem 11rem;
+      grid-template-rows: 2rem 4rem;
+    }
+  }
+}
+
+.service__card--1 > .title {
+  @include cardTitle;
+}
+.service__card--1 > .description {
+  @include cardDescription;
+}
+.service__card--2 > .title {
+  @include cardTitle;
+}
+.service__card--2 > .description {
+  @include cardDescription;
+}
+.service__card--3 > .title {
+  @include cardTitle;
+}
+.service__card--3 > .description {
+  @include cardDescription;
+}
+.service__card--4 > .title {
+  @include cardTitle;
+}
+.service__card--4 > .description {
+  @include cardDescription;
+}
+
+.globe-icon {
+  width: 3rem;
+  height: 3rem;
+  @include respond(xs-phone) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.pen-icon {
+  width: 2.7rem;
+  height: 2.7rem;
+  @include respond(xs-phone) {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+}
+.graph-icon {
+  width: 2.5rem;
+  height: 2.2rem;
+  @include respond(xs-phone) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+}
+.code-icon {
+  width: 4rem;
+  height: 4rem;
+
+  @include respond(xs-phone) {
+    width: 2rem;
+    height: 2rem;
+  }
+}

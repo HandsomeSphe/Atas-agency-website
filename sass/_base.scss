@@ -52,6 +52,7 @@
 html {
   box-sizing: border-box;
   font-family: Noto sans, sans-serif;
+  font-size: 62.5%;
 
   @include respond(tab-port) {
     font-size: 50%;
@@ -70,5 +71,22 @@ html {
   }
   @include respond(big-desktop) {
     font-size: 99%;
+  }
+}
+
+@mixin cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: Noto sans, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+
+  @include respond(xs-phone) {
+    font-size: 0.6rem;
+  }
+}
+@mixin cardDescription {
+  color: rgba(0, 0, 0, 0.6);
+  @include respond(xs-phone) {
+    font-size: 0.5rem;
   }
 }
