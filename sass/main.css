@@ -692,7 +692,7 @@ html {
 }
 
 .services__contanier {
-  height: 53rem;
+  height: 63rem;
   background-color: rgba(227, 227, 227, 0.5);
   margin: 0.7rem;
   padding: 15rem 6.5rem;
@@ -712,6 +712,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0;
   }
 }
 
@@ -722,10 +723,25 @@ html {
   width: 100%;
 }
 
+@media only screen and (max-width: 20em) {
+  .services__contanier--text {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding-bottom: 5rem;
+  }
+}
+
 .services__contanier--text > .title {
   font-size: 2.4rem;
   font-weight: 400rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .services__contanier--text > .title {
+    font-size: 2.2rem;
+  }
 }
 
 .services__contanier--text > .description {
@@ -743,6 +759,15 @@ html {
   background-color: black;
   border: none;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 20em) {
+  .services__contanier--text > .explore-btn {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 .services__contanier--cards {
@@ -763,8 +788,10 @@ html {
   .services__contanier--cards {
     -ms-grid-columns: 15rem 15rem;
         grid-template-columns: 15rem 15rem;
-    -ms-grid-rows: 8rem 8rem;
-        grid-template-rows: 8rem 8rem;
+    -ms-grid-rows: 10.5rem 10.5rem;
+        grid-template-rows: 10.5rem 10.5rem;
+    grid-row-gap: 1.1rem;
+    grid-column-gap: 1.1rem;
   }
 }
 
@@ -798,11 +825,20 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--1, .service__card--2, .service__card--3, .service__card--4 {
-    padding: 0;
-    -ms-grid-columns: 2rem 11rem;
-        grid-template-columns: 2rem 11rem;
-    -ms-grid-rows: 2rem 4rem;
-        grid-template-rows: 2rem 4rem;
+    padding: 1rem;
+    -ms-grid-columns: 13rem;
+        grid-template-columns: 13rem;
+    -ms-grid-rows: 1.5rem 2rem 0 5rem;
+        grid-template-rows: 1.5rem 2rem 0 5rem;
+    -webkit-box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
+            box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
+    grid-row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -815,7 +851,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--1 > .title {
-    font-size: 0.6rem;
+    font-size: 0.83rem;
+    text-align: center;
   }
 }
 
@@ -825,7 +862,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--1 > .description {
-    font-size: 0.5rem;
+    font-size: 0.725rem;
+    text-align: center;
   }
 }
 
@@ -838,7 +876,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--2 > .title {
-    font-size: 0.6rem;
+    font-size: 0.83rem;
+    text-align: center;
   }
 }
 
@@ -848,7 +887,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--2 > .description {
-    font-size: 0.5rem;
+    font-size: 0.725rem;
+    text-align: center;
   }
 }
 
@@ -861,7 +901,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--3 > .title {
-    font-size: 0.6rem;
+    font-size: 0.83rem;
+    text-align: center;
   }
 }
 
@@ -871,7 +912,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--3 > .description {
-    font-size: 0.5rem;
+    font-size: 0.725rem;
+    text-align: center;
   }
 }
 
@@ -884,7 +926,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--4 > .title {
-    font-size: 0.6rem;
+    font-size: 0.83rem;
+    text-align: center;
   }
 }
 
@@ -894,7 +937,8 @@ html {
 
 @media only screen and (max-width: 20em) {
   .service__card--4 > .description {
-    font-size: 0.5rem;
+    font-size: 0.725rem;
+    text-align: center;
   }
 }
 
@@ -905,8 +949,9 @@ html {
 
 @media only screen and (max-width: 20em) {
   .globe-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    height: 1.7rem;
+    width: 100%;
+    fill: rgba(0, 0, 0, 0.55);
   }
 }
 
@@ -917,8 +962,9 @@ html {
 
 @media only screen and (max-width: 20em) {
   .pen-icon {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 100%;
+    height: 1.7rem;
+    fill: rgba(0, 0, 0, 0.55);
   }
 }
 
@@ -929,8 +975,9 @@ html {
 
 @media only screen and (max-width: 20em) {
   .graph-icon {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 100%;
+    height: 1.4rem;
+    fill: rgba(0, 0, 0, 0.55);
   }
 }
 
@@ -941,8 +988,9 @@ html {
 
 @media only screen and (max-width: 20em) {
   .code-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 100%;
+    height: 3.2rem;
+    fill: rgba(0, 0, 0, 0.55);
   }
 }
 /*# sourceMappingURL=main.css.map */

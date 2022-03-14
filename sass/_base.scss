@@ -81,12 +81,14 @@ html {
   color: rgba(0, 0, 0, 0.9);
 
   @include respond(xs-phone) {
-    font-size: 0.6rem;
+    font-size: 0.83rem;
+    text-align: center;
   }
 }
 @mixin cardDescription {
   color: rgba(0, 0, 0, 0.6);
   @include respond(xs-phone) {
-    font-size: 0.5rem;
+    font-size: 0.725rem;
+    text-align: center;
   }
 }
