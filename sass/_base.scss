@@ -79,6 +79,9 @@ html {
   font-weight: 600;
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
+  @include respond(tablet) {
+    font-size: 1.4rem;
+  }
   @include respond(tab-port) {
     font-size: 1.1rem;
     text-align: center;
@@ -94,6 +97,9 @@ html {
 }
 @mixin cardDescription {
   color: rgba(0, 0, 0, 0.6);
+  @include respond(tablet) {
+    font-size: 1.3rem;
+  }
   @include respond(tab-port) {
     font-size: 0.94rem;
     text-align: center;
