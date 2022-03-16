@@ -704,10 +704,22 @@ html {
           align-items: center;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .services__contanier {
+    width: 100%;
+    padding: 6rem 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .services__contanier {
     width: 100%;
-    padding: 7rem 3rem;
+    padding: 7rem 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -723,6 +735,15 @@ html {
   width: 100%;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .services__contanier--text {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding-bottom: 5rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .services__contanier--text {
     -webkit-box-flex: 50%;
@@ -733,9 +754,15 @@ html {
 }
 
 .services__contanier--text > .title {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 400rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .services__contanier--text > .title {
+    font-size: 2.4rem;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -745,11 +772,11 @@ html {
 }
 
 .services__contanier--text > .description {
-  width: 23rem;
+  width: 24rem;
   height: auto;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 3rem;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .services__contanier--text > .explore-btn {
@@ -761,11 +788,20 @@ html {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .services__contanier--text > .explore-btn {
+    width: 11rem;
+    height: 3.4rem;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .services__contanier--text > .explore-btn {
     width: 10rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: rgba(255, 255, 255, 0.8);
   }
 }
@@ -782,6 +818,17 @@ html {
       grid-template-rows: 15rem 15rem;
   grid-row-gap: 2rem;
   grid-column-gap: 2rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .services__contanier--cards {
+    -ms-grid-columns: 19rem 19rem;
+        grid-template-columns: 19rem 19rem;
+    -ms-grid-rows: 12.5rem 12.5rem;
+        grid-template-rows: 12.5rem 12.5rem;
+    grid-row-gap: 1.2rem;
+    grid-column-gap: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -823,6 +870,25 @@ html {
           box-shadow: 4px 4px 54px rgba(196, 196, 196, 0.1);
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .service__card--1, .service__card--2, .service__card--3, .service__card--4 {
+    padding: 1rem;
+    -ms-grid-columns: 15rem;
+        grid-template-columns: 15rem;
+    -ms-grid-rows: 2rem 2.2rem 0 6rem;
+        grid-template-rows: 2rem 2.2rem 0 6rem;
+    -webkit-box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
+            box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
+    grid-row-gap: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .service__card--1, .service__card--2, .service__card--3, .service__card--4 {
     padding: 1rem;
@@ -843,10 +909,17 @@ html {
 }
 
 .service__card--1 > .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .service__card--1 > .title {
+    font-size: 0.94rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -860,6 +933,13 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .service__card--1 > .description {
+    font-size: 0.84rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .service__card--1 > .description {
     font-size: 0.725rem;
@@ -868,10 +948,17 @@ html {
 }
 
 .service__card--2 > .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .service__card--2 > .title {
+    font-size: 0.94rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -885,6 +972,13 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .service__card--2 > .description {
+    font-size: 0.84rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .service__card--2 > .description {
     font-size: 0.725rem;
@@ -893,10 +987,17 @@ html {
 }
 
 .service__card--3 > .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .service__card--3 > .title {
+    font-size: 0.94rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -910,6 +1011,13 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .service__card--3 > .description {
+    font-size: 0.84rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .service__card--3 > .description {
     font-size: 0.725rem;
@@ -918,10 +1026,17 @@ html {
 }
 
 .service__card--4 > .title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .service__card--4 > .title {
+    font-size: 0.94rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -935,6 +1050,13 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .service__card--4 > .description {
+    font-size: 0.84rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .service__card--4 > .description {
     font-size: 0.725rem;
@@ -945,6 +1067,14 @@ html {
 .globe-icon {
   width: 3rem;
   height: 3rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .globe-icon {
+    width: 100%;
+    height: 2rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -960,6 +1090,14 @@ html {
   height: 2.7rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .pen-icon {
+    width: 100%;
+    height: 2rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .pen-icon {
     width: 100%;
@@ -973,6 +1111,14 @@ html {
   height: 2.2rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .graph-icon {
+    width: 100%;
+    height: 1.8rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .graph-icon {
     width: 100%;
@@ -984,6 +1130,14 @@ html {
 .code-icon {
   width: 4rem;
   height: 4rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .code-icon {
+    width: 100%;
+    height: 3.5rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
 }
 
 @media only screen and (max-width: 20em) {

@@ -10,10 +10,15 @@
   padding: 15rem 6.5rem;
   display: flex;
   align-items: center;
-
+  @include respond(s-phone) {
+    width: 100%;
+    padding: 6rem 2rem;
+    flex-direction: column;
+    margin: 0;
+  }
   @include respond(xs-phone) {
     width: 100%;
-    padding: 7rem 3rem;
+    padding: 7rem 2rem;
     flex-direction: column;
     margin: 0;
   }
@@ -21,24 +26,31 @@
   &--text {
     flex: 30%;
     width: 100%;
+    @include respond(s-phone) {
+      flex: 50%;
+      padding-bottom: 5rem;
+    }
     @include respond(xs-phone) {
       flex: 50%;
       padding-bottom: 5rem;
     }
     & > .title {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       font-weight: 400rem;
       margin-bottom: 1rem;
+      @include respond(s-phone) {
+        font-size: 2.4rem;
+      }
       @include respond(xs-phone) {
         font-size: 2.2rem;
       }
     }
     & > .description {
-      width: 23rem;
+      width: 24rem;
       height: auto;
       color: rgba(0, 0, 0, 0.6);
       margin-bottom: 3rem;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
     }
     & > .explore-btn {
       width: 12rem;
@@ -47,10 +59,16 @@
       background-color: black;
       border: none;
       cursor: pointer;
+      @include respond(s-phone) {
+        width: 11rem;
+        height: 3.4rem;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+      }
       @include respond(xs-phone) {
         width: 10rem;
         height: 3rem;
-        font-size: 1rem;
+        font-size: 1.05rem;
         color: rgba(255, 255, 255, 0.8);
       }
     }
@@ -63,6 +81,12 @@
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     // padding: 0 4rem 0 0;
+    @include respond(s-phone) {
+      grid-template-columns: 19rem 19rem;
+      grid-template-rows: 12.5rem 12.5rem;
+      grid-row-gap: 1.2rem;
+      grid-column-gap: 1.2rem;
+    }
     @include respond(xs-phone) {
       grid-template-columns: 15rem 15rem;
       grid-template-rows: 10.5rem 10.5rem;
@@ -94,7 +118,15 @@
       transform: scale(1.05);
       box-shadow: 4px 4px 54px rgba(196, 196, 196, 0.1);
     }
-
+    @include respond(s-phone) {
+      padding: 1rem;
+      grid-template-columns: 15rem;
+      grid-template-rows: 2rem 2.2rem 0 6rem;
+      box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
+      grid-row-gap: 0;
+      justify-content: center;
+      align-items: center;
+    }
     @include respond(xs-phone) {
       padding: 1rem;
       grid-template-columns: 13rem;
@@ -135,6 +167,11 @@
 .globe-icon {
   width: 3rem;
   height: 3rem;
+  @include respond(s-phone) {
+    width: 100%;
+    height: 2rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
   @include respond(xs-phone) {
     height: 1.7rem;
     width: 100%;
@@ -144,6 +181,11 @@
 .pen-icon {
   width: 2.7rem;
   height: 2.7rem;
+  @include respond(s-phone) {
+    width: 100%;
+    height: 2rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
   @include respond(xs-phone) {
     width: 100%;
     height: 1.7rem;
@@ -153,6 +195,11 @@
 .graph-icon {
   width: 2.5rem;
   height: 2.2rem;
+  @include respond(s-phone) {
+    width: 100%;
+    height: 1.8rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
   @include respond(xs-phone) {
     width: 100%;
     height: 1.4rem;
@@ -162,7 +209,11 @@
 .code-icon {
   width: 4rem;
   height: 4rem;
-
+  @include respond(s-phone) {
+    width: 100%;
+    height: 3.5rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
   @include respond(xs-phone) {
     width: 100%;
     height: 3.2rem;
