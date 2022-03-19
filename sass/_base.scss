@@ -91,7 +91,7 @@ html {
     text-align: center;
   }
   @include respond(xs-phone) {
-    font-size: 0.83rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 }
@@ -109,7 +109,8 @@ html {
     text-align: center;
   }
   @include respond(xs-phone) {
-    font-size: 0.725rem;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 1.1rem;
     text-align: center;
   }
 }
