@@ -1,0 +1,142 @@
+.portfolio {
+  width: 100%;
+  height: auto;
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 5rem;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+
+    @include respond(xs-phone) {
+      display: grid;
+      grid-template-columns: 11rem 11rem;
+      grid-template-rows: 4rem 4rem 4rem 4rem;
+      grid-row-gap: 1rem;
+      grid-column-gap: 1rem;
+      padding: 1rem;
+      margin: 0 auto;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--filter {
+      display: flex;
+      align-items: center;
+      padding: 0.8rem 2rem;
+      background-color: black;
+      color: rgba(255, 255, 255, 0.8);
+      border-radius: 2rem;
+      @include respond(xs-phone) {
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 1rem;
+      }
+
+      & > .icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        fill: rgba(255, 255, 255, 0.7);
+        margin-right: 0.3rem;
+      }
+    }
+  }
+  &__filter--btn {
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  &__video {
+    width: 100%;
+    padding: 2rem 6rem 0 6rem;
+    margin: 2rem 0 0 0;
+    @include respond(xs-phone) {
+      padding: 2rem;
+    }
+  }
+  &__info {
+    padding: 2rem 6rem;
+    display: flex;
+    @include respond(xs-phone) {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    &--1 {
+      height: 12rem;
+      padding: 0 7rem 0 0;
+      @include respond(xs-phone) {
+        height: auto;
+        padding: 0 0 4rem 0;
+      }
+
+      & > .title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        @include respond(xs-phone) {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+      & > .description {
+        width: 48rem;
+        font-size: 1.1rem;
+        color: rgba(0, 0, 0, 0.9);
+        @include respond(xs-phone) {
+          width: 30rem;
+          text-align: center;
+        }
+      }
+    }
+    &--2 {
+      flex: 50%;
+      border-left: 2px solid lightgray;
+      padding-left: 2rem;
+      @include respond(xs-phone) {
+        border-left: none;
+        border-top: 2px solid lightgray;
+        padding: 2rem;
+      }
+      & > .title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        @include respond(xs-phone) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 7rem;
+  font-family: poppins, sans-serif;
+  @include respond(xs-phone) {
+    font-size: 1.8rem;
+  }
+}
+.video {
+  width: 100rem;
+  @include respond(xs-phone) {
+    width: 31rem;
+  }
+}
+
+.language__1,
+.language__2,
+.language__3,
+.language__4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  @include respond(xs-phone) {
+    text-align: center;
+  }
+}

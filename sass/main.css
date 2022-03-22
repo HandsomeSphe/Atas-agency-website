@@ -1762,4 +1762,223 @@ html {
     fill: rgba(0, 0, 0, 0.55);
   }
 }
+
+.portfolio {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 5rem;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__filter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 11rem 11rem;
+        grid-template-columns: 11rem 11rem;
+    -ms-grid-rows: 4rem 4rem 4rem 4rem;
+        grid-template-rows: 4rem 4rem 4rem 4rem;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.portfolio__filter--filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem 2rem;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__filter--filter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+}
+
+.portfolio__filter--filter > .icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: rgba(255, 255, 255, 0.7);
+  margin-right: 0.3rem;
+}
+
+.portfolio__filter--btn {
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.portfolio__video {
+  width: 100%;
+  padding: 2rem 6rem 0 6rem;
+  margin: 2rem 0 0 0;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__video {
+    padding: 2rem;
+  }
+}
+
+.portfolio__info {
+  padding: 2rem 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
+}
+
+.portfolio__info--1 {
+  height: 12rem;
+  padding: 0 7rem 0 0;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info--1 {
+    height: auto;
+    padding: 0 0 4rem 0;
+  }
+}
+
+.portfolio__info--1 > .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info--1 > .title {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+}
+
+.portfolio__info--1 > .description {
+  width: 48rem;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info--1 > .description {
+    width: 30rem;
+    text-align: center;
+  }
+}
+
+.portfolio__info--2 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  border-left: 2px solid lightgray;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info--2 {
+    border-left: none;
+    border-top: 2px solid lightgray;
+    padding: 2rem;
+  }
+}
+
+.portfolio__info--2 > .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__info--2 > .title {
+    text-align: center;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 7rem;
+  font-family: poppins, sans-serif;
+}
+
+@media only screen and (max-width: 20em) {
+  .heading {
+    font-size: 1.8rem;
+  }
+}
+
+.video {
+  width: 100rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .video {
+    width: 31rem;
+  }
+}
+
+.language__1,
+.language__2,
+.language__3,
+.language__4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 20em) {
+  .language__1,
+  .language__2,
+  .language__3,
+  .language__4 {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */
