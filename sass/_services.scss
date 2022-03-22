@@ -44,6 +44,10 @@
   &--text {
     flex: 60%;
     width: 100%;
+    @include respond(tab-land) {
+      flex: 50%;
+      padding: 0 5rem 0 0;
+    }
     @include respond(tablet) {
       flex: 50%;
       padding-bottom: 7rem;
@@ -64,6 +68,9 @@
       font-size: 3rem;
       font-weight: 400rem;
       margin-bottom: 1rem;
+      @include respond(tab-land) {
+        font-size: 3.2rem;
+      }
       @include respond(tablet) {
         font-size: 3.7rem;
         margin-left: 1rem;
@@ -88,6 +95,10 @@
       color: rgba(0, 0, 0, 0.6);
       margin-bottom: 3.8rem;
       font-size: 1.16rem;
+      @include respond(tab-land) {
+        width: 27rem;
+        font-size: 1.4rem;
+      }
       @include respond(tablet) {
         font-size: 1.6rem;
         width: 38rem;
@@ -156,6 +167,12 @@
     grid-template-rows: 15rem 15rem;
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
+    @include respond(tab-land) {
+      grid-template-columns: 27rem 27rem;
+      grid-template-rows: 16rem 16rem;
+      grid-row-gap: 1.3rem;
+      grid-column-gap: 1.3rem;
+    }
     @include respond(tablet) {
       grid-template-columns: 32rem 32rem;
       grid-template-rows: 21rem 21rem;
@@ -204,6 +221,13 @@
     &:hover {
       transform: scale(1.05);
       box-shadow: 4px 4px 54px rgba(196, 196, 196, 0.1);
+    }
+    @include respond(tab-land) {
+      padding: 1rem;
+      grid-template-columns: 4rem 20rem;
+      grid-template-rows: 4rem 8rem;
+      grid-row-gap: 1rem;
+      align-items: center;
     }
     @include respond(tablet) {
       padding: 1rem;
