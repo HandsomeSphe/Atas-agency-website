@@ -100,7 +100,7 @@
       @include respond(xs-phone) {
         border-left: none;
         border-top: 2px solid lightgray;
-        padding: 2rem;
+        padding: 3rem;
       }
       & > .title {
         font-weight: 500;
