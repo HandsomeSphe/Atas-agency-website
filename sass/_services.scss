@@ -192,8 +192,8 @@
       grid-column-gap: 1.2rem;
     }
     @include respond(xs-phone) {
-      grid-template-columns: 27rem;
-      grid-template-rows: 18.5rem 18.5rem 18.5rem 18.5rem;
+      grid-template-columns: 25rem;
+      grid-template-rows: 18rem 18rem 18rem 18rem;
       grid-row-gap: 1.1rem;
       grid-column-gap: 1.1rem;
     }

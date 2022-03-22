@@ -1152,10 +1152,10 @@ html {
 
 @media only screen and (max-width: 20em) {
   .services__contanier--cards {
-    -ms-grid-columns: 27rem;
-        grid-template-columns: 27rem;
-    -ms-grid-rows: 18.5rem 18.5rem 18.5rem 18.5rem;
-        grid-template-rows: 18.5rem 18.5rem 18.5rem 18.5rem;
+    -ms-grid-columns: 25rem;
+        grid-template-columns: 25rem;
+    -ms-grid-rows: 18rem 18rem 18rem 18rem;
+        grid-template-rows: 18rem 18rem 18rem 18rem;
     grid-row-gap: 1.1rem;
     grid-column-gap: 1.1rem;
   }
@@ -2173,7 +2173,7 @@ html {
   .language__3,
   .language__4 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
