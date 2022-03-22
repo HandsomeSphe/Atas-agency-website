@@ -1785,6 +1785,28 @@ html {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__filter {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 12rem 12rem;
+        grid-template-columns: 12rem 12rem;
+    -ms-grid-rows: 4.3rem 4.3rem;
+        grid-template-rows: 4.3rem 4.3rem;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__filter {
     display: -ms-grid;
@@ -1820,6 +1842,18 @@ html {
   border-radius: 2rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__filter--filter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0.8rem 1rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__filter--filter {
     -webkit-box-align: center;
@@ -1852,6 +1886,12 @@ html {
   margin: 2rem 0 0 0;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__video {
+    padding: 2rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__video {
     padding: 2rem;
@@ -1863,6 +1903,16 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2rem;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -1880,6 +1930,13 @@ html {
   padding: 0 7rem 0 0;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info--1 {
+    height: auto;
+    padding: 0 0 5rem 0;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__info--1 {
     height: auto;
@@ -1893,6 +1950,13 @@ html {
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info--1 > .title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__info--1 > .title {
     text-align: center;
@@ -1904,6 +1968,13 @@ html {
   width: 48rem;
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info--1 > .description {
+    width: 37rem;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -1921,6 +1992,14 @@ html {
   padding-left: 2rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info--2 {
+    border-left: none;
+    border-top: 2px solid lightgray;
+    padding: 3rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .portfolio__info--2 {
     border-left: none;
@@ -1933,6 +2012,12 @@ html {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__info--2 > .title {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -1949,6 +2034,12 @@ html {
   font-family: poppins, sans-serif;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .heading {
+    font-size: 2.1rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .heading {
     font-size: 1.8rem;
@@ -1957,6 +2048,12 @@ html {
 
 .video {
   width: 100rem;
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .video {
+    width: 38rem;
+  }
 }
 
 @media only screen and (max-width: 20em) {
@@ -1973,12 +2070,23 @@ html {
   margin-bottom: 0.4rem;
 }
 
+@media only screen and (max-width: 23.4375em) {
+  .language__1,
+  .language__2,
+  .language__3,
+  .language__4 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .language__1,
   .language__2,
   .language__3,
   .language__4 {
     text-align: center;
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
