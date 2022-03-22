@@ -80,14 +80,15 @@ html {
   font-family: Noto sans, sans-serif;
   color: rgba(0, 0, 0, 0.9);
   @include respond(tablet) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
   @include respond(tab-port) {
     font-size: 1.1rem;
     text-align: center;
   }
   @include respond(s-phone) {
-    font-size: 0.94rem;
+    font-size: 1.17rem;
     text-align: center;
   }
   @include respond(xs-phone) {
@@ -98,14 +99,15 @@ html {
 @mixin cardDescription {
   color: rgba(0, 0, 0, 0.6);
   @include respond(tablet) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
   @include respond(tab-port) {
-    font-size: 0.94rem;
+    font-size: 1rem;
     text-align: center;
   }
   @include respond(s-phone) {
-    font-size: 0.84rem;
+    font-size: 1rem;
     text-align: center;
   }
   @include respond(xs-phone) {

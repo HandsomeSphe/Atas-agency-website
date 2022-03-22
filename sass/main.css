@@ -66,7 +66,7 @@ html {
 @media only screen and (max-width: 31em) {
   #header {
     height: 74rem;
-    width: 100rem;
+    width: 72rem;
   }
 }
 
@@ -844,11 +844,22 @@ html {
           align-items: center;
 }
 
+@media only screen and (max-width: 48em) {
+  .services__contanier {
+    width: 100.4rem;
+  }
+}
+
 @media only screen and (max-width: 31em) {
   .services__contanier {
-    width: 98rem;
+    width: 71rem;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 4rem 2rem;
-    margin: 0.8rem;
+    margin: 0.5rem;
   }
 }
 
@@ -867,7 +878,8 @@ html {
 @media only screen and (max-width: 23.4375em) {
   .services__contanier {
     width: 100%;
-    padding: 6rem 2rem;
+    height: 100%;
+    padding: 6rem 4.5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -898,9 +910,10 @@ html {
 
 @media only screen and (max-width: 31em) {
   .services__contanier--text {
-    -webkit-box-flex: 20%;
-        -ms-flex: 20%;
-            flex: 20%;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding-bottom: 7rem;
   }
 }
 
@@ -940,18 +953,22 @@ html {
 @media only screen and (max-width: 31em) {
   .services__contanier--text > .title {
     font-size: 3.7rem;
+    margin-left: 1rem;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .services__contanier--text > .title {
     font-size: 2.6rem;
+    margin-left: 0;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .services__contanier--text > .title {
     font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1.1rem;
   }
 }
 
@@ -972,9 +989,10 @@ html {
 
 @media only screen and (max-width: 31em) {
   .services__contanier--text > .description {
-    font-size: 1.4rem;
-    width: 27rem;
+    font-size: 1.6rem;
+    width: 38rem;
     margin-bottom: 4rem;
+    margin-left: 1rem;
   }
 }
 
@@ -983,6 +1001,7 @@ html {
     width: 24rem;
     font-size: 1.1rem;
     margin-bottom: 3rem;
+    margin-left: 0;
   }
 }
 
@@ -990,7 +1009,8 @@ html {
   .services__contanier--text > .description {
     width: 24rem;
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
+    text-align: center;
   }
 }
 
@@ -1016,6 +1036,7 @@ html {
   .services__contanier--text > .explore-btn {
     width: 13rem;
     height: 4.4rem;
+    margin-left: 1rem;
   }
 }
 
@@ -1023,6 +1044,7 @@ html {
   .services__contanier--text > .explore-btn {
     width: 12rem;
     height: 3.5rem;
+    margin-left: 0;
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.8);
   }
@@ -1034,6 +1056,7 @@ html {
     height: 3.4rem;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 0 10rem;
   }
 }
 
@@ -1063,21 +1086,21 @@ html {
 
 @media only screen and (max-width: 31em) {
   .services__contanier--cards {
-    -ms-grid-columns: 29rem 29rem;
-        grid-template-columns: 29rem 29rem;
-    -ms-grid-rows: 16rem 16rem;
-        grid-template-rows: 16rem 16rem;
-    grid-row-gap: 1.2rem;
-    grid-column-gap: 1.2rem;
+    -ms-grid-columns: 32rem 32rem;
+        grid-template-columns: 32rem 32rem;
+    -ms-grid-rows: 21rem 21rem;
+        grid-template-rows: 21rem 21rem;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .services__contanier--cards {
-    -ms-grid-columns: 21.5rem 21.5rem;
-        grid-template-columns: 21.5rem 21.5rem;
-    -ms-grid-rows: 14rem 14rem;
-        grid-template-rows: 14rem 14rem;
+    -ms-grid-columns: 21.8rem 21.8rem;
+        grid-template-columns: 21.8rem 21.8rem;
+    -ms-grid-rows: 15rem 15rem;
+        grid-template-rows: 15rem 15rem;
     grid-row-gap: 1.2rem;
     grid-column-gap: 1.2rem;
   }
@@ -1085,10 +1108,10 @@ html {
 
 @media only screen and (max-width: 23.4375em) {
   .services__contanier--cards {
-    -ms-grid-columns: 19rem 19rem;
-        grid-template-columns: 19rem 19rem;
-    -ms-grid-rows: 12.5rem 12.5rem;
-        grid-template-rows: 12.5rem 12.5rem;
+    -ms-grid-columns: 28rem;
+        grid-template-columns: 28rem;
+    -ms-grid-rows: 18rem 18rem 18rem 18rem;
+        grid-template-rows: 18rem 18rem 18rem 18rem;
     grid-row-gap: 1.2rem;
     grid-column-gap: 1.2rem;
   }
@@ -1135,9 +1158,20 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--1, .service__card--2, .service__card--3, .service__card--4 {
+    padding: 1rem;
+    -ms-grid-columns: 22rem;
+        grid-template-columns: 22rem;
+    -ms-grid-rows: 3rem 2rem 0 9rem;
+        grid-template-rows: 3rem 2rem 0 9rem;
     -webkit-box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
             box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
-    padding: 2.3rem auto;
+    grid-row-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1146,8 +1180,8 @@ html {
     padding: 1rem;
     -ms-grid-columns: 15rem;
         grid-template-columns: 15rem;
-    -ms-grid-rows: 2.7rem 2.2rem 0 6rem;
-        grid-template-rows: 2.7rem 2.2rem 0 6rem;
+    -ms-grid-rows: 2.7rem 3.2rem 0 7.5rem;
+        grid-template-rows: 2.7rem 3.2rem 0 7.5rem;
     -webkit-box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
             box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
     grid-row-gap: 0;
@@ -1165,8 +1199,8 @@ html {
     padding: 1rem;
     -ms-grid-columns: 15rem;
         grid-template-columns: 15rem;
-    -ms-grid-rows: 2rem 2.2rem 0 6rem;
-        grid-template-rows: 2rem 2.2rem 0 6rem;
+    -ms-grid-rows: 3.2rem 3.7rem 0 9rem;
+        grid-template-rows: 3.2rem 3.7rem 0 9rem;
     -webkit-box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
             box-shadow: 4px 4px 24px rgba(196, 196, 196, 0.5);
     grid-row-gap: 0;
@@ -1207,7 +1241,8 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--1 > .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1220,7 +1255,7 @@ html {
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--1 > .title {
-    font-size: 0.94rem;
+    font-size: 1.17rem;
     text-align: center;
   }
 }
@@ -1238,20 +1273,21 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--1 > .description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .service__card--1 > .description {
-    font-size: 0.94rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--1 > .description {
-    font-size: 0.84rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -1273,7 +1309,8 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--2 > .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1286,7 +1323,7 @@ html {
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--2 > .title {
-    font-size: 0.94rem;
+    font-size: 1.17rem;
     text-align: center;
   }
 }
@@ -1304,20 +1341,21 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--2 > .description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .service__card--2 > .description {
-    font-size: 0.94rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--2 > .description {
-    font-size: 0.84rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -1339,7 +1377,8 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--3 > .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1352,7 +1391,7 @@ html {
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--3 > .title {
-    font-size: 0.94rem;
+    font-size: 1.17rem;
     text-align: center;
   }
 }
@@ -1370,20 +1409,21 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--3 > .description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .service__card--3 > .description {
-    font-size: 0.94rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--3 > .description {
-    font-size: 0.84rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -1405,7 +1445,8 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--4 > .title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1418,7 +1459,7 @@ html {
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--4 > .title {
-    font-size: 0.94rem;
+    font-size: 1.17rem;
     text-align: center;
   }
 }
@@ -1436,20 +1477,21 @@ html {
 
 @media only screen and (max-width: 31em) {
   .service__card--4 > .description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 26.5625em) {
   .service__card--4 > .description {
-    font-size: 0.94rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .service__card--4 > .description {
-    font-size: 0.84rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -1469,8 +1511,9 @@ html {
 
 @media only screen and (max-width: 31em) {
   .globe-icon {
-    width: 3rem;
-    height: 3rem;
+    width: 100%;
+    height: 3.2rem;
+    fill: rgba(0, 0, 0, 0.55);
   }
 }
 
@@ -1485,7 +1528,7 @@ html {
 @media only screen and (max-width: 23.4375em) {
   .globe-icon {
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     fill: rgba(0, 0, 0, 0.55);
   }
 }
@@ -1503,6 +1546,14 @@ html {
   height: 2.7rem;
 }
 
+@media only screen and (max-width: 31em) {
+  .pen-icon {
+    width: 100%;
+    height: 3rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .pen-icon {
     width: 100%;
@@ -1514,7 +1565,7 @@ html {
 @media only screen and (max-width: 23.4375em) {
   .pen-icon {
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     fill: rgba(0, 0, 0, 0.55);
   }
 }
@@ -1532,6 +1583,14 @@ html {
   height: 2.2rem;
 }
 
+@media only screen and (max-width: 31em) {
+  .graph-icon {
+    width: 100%;
+    height: 2.5rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .graph-icon {
     width: 100%;
@@ -1543,7 +1602,7 @@ html {
 @media only screen and (max-width: 23.4375em) {
   .graph-icon {
     width: 100%;
-    height: 1.8rem;
+    height: 2.5rem;
     fill: rgba(0, 0, 0, 0.55);
   }
 }
@@ -1561,6 +1620,14 @@ html {
   height: 4rem;
 }
 
+@media only screen and (max-width: 31em) {
+  .code-icon {
+    width: 100%;
+    height: 5.7rem;
+    fill: rgba(0, 0, 0, 0.55);
+  }
+}
+
 @media only screen and (max-width: 26.5625em) {
   .code-icon {
     width: 100%;
@@ -1572,7 +1639,7 @@ html {
 @media only screen and (max-width: 23.4375em) {
   .code-icon {
     width: 100%;
-    height: 3.5rem;
+    height: 6rem;
     fill: rgba(0, 0, 0, 0.55);
   }
 }
