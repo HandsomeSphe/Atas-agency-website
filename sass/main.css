@@ -1768,9 +1768,60 @@ html {
   height: auto;
 }
 
+@media only screen and (max-width: 31em) {
+  .portfolio {
+    width: 71rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .portfolio {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio {
+    width: 100%;
+  }
+}
+
 .portfolio__contanier {
   width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 31em) {
+  .portfolio__contanier {
+    width: 71rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .portfolio__contanier {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__contanier {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__contanier {
+    width: 100%;
+  }
 }
 
 .portfolio__filter {
@@ -1794,13 +1845,13 @@ html {
   .portfolio__filter {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 13rem 13rem;
-        grid-template-columns: 13rem 13rem;
-    -ms-grid-rows: 4.6rem 4.6rem;
-        grid-template-rows: 4.6rem 4.6rem;
-    grid-row-gap: 1rem;
-    grid-column-gap: 1rem;
-    padding: 1rem;
+    -ms-grid-columns: 15rem 15rem;
+        grid-template-columns: 15rem 15rem;
+    -ms-grid-rows: 5rem 5rem;
+        grid-template-rows: 5rem 5rem;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 2rem;
+    padding: 4rem 0;
     margin: 0 auto;
     text-align: center;
     -webkit-box-align: center;
@@ -2211,7 +2262,9 @@ html {
 
 @media only screen and (max-width: 31em) {
   .heading {
-    font-size: 2.3rem;
+    font-size: 3.4rem;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -2239,7 +2292,7 @@ html {
 
 @media only screen and (max-width: 31em) {
   .video {
-    width: 68rem;
+    width: 68 rem;
   }
 }
 
