@@ -19,10 +19,9 @@
     height: auto;
     margin: 0;
     padding: 0;
-
-    overflow: hidden;
+    // overflow: hidden;
     @include respond(tablet) {
-      width: 71rem;
+      width: 100%;
     }
     @include respond(tab-port) {
       width: 100%;
@@ -44,17 +43,19 @@
     padding: 0 5rem;
     font-family: poppins, sans-serif;
     font-weight: 500;
+    font-size: 1rem;
     @include respond(tablet) {
       display: grid;
       grid-template-columns: 15rem 15rem;
       grid-template-rows: 5rem 5rem;
-      grid-row-gap: 0.5rem;
+      grid-row-gap: 2rem;
       grid-column-gap: 2rem;
       padding: 4rem 0;
       margin: 0 auto;
       text-align: center;
       align-items: center;
       justify-content: center;
+      font-size: 1.3rem;
     }
     @include respond(tab-port) {
       display: grid;
@@ -100,11 +101,11 @@
       padding: 0.8rem 2rem;
       background-color: black;
       color: rgba(255, 255, 255, 0.8);
-      border-radius: 2rem;
+      border-radius: 2.4rem;
       @include respond(tablet) {
         align-items: center;
         justify-content: center;
-        padding: 0.8rem 1rem;
+        padding: 1.4rem 2rem;
       }
       @include respond(tab-port) {
         align-items: center;
@@ -133,8 +134,20 @@
   &__filter--btn {
     background-color: rgba(211, 211, 211, 0.5);
     padding: 0.8rem 2rem;
-    border-radius: 2rem;
+    border-radius: 2.4rem;
     cursor: pointer;
+    @include respond(tablet) {
+      padding: 1.4rem 2rem;
+    }
+    @include respond(tab-port) {
+      padding: 0.8rem 2rem;
+    }
+    @include respond(s-phone) {
+      padding: 0.8rem 2rem;
+    }
+    @include respond(xs-phone) {
+      padding: 0.8rem 2rem;
+    }
   }
   &__video {
     width: 100%;
@@ -145,12 +158,15 @@
     }
     @include respond(tab-port) {
       padding: 2rem;
+      width: 100%;
     }
     @include respond(s-phone) {
       padding: 2rem;
+      width: 100%;
     }
     @include respond(xs-phone) {
       padding: 2rem;
+      width: 100%;
     }
   }
   &__info {

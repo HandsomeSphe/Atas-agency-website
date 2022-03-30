@@ -1797,12 +1797,11 @@ html {
   height: auto;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 31em) {
   .portfolio__contanier {
-    width: 71rem;
+    width: 100%;
   }
 }
 
@@ -1839,6 +1838,7 @@ html {
   padding: 0 5rem;
   font-family: poppins, sans-serif;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 31em) {
@@ -1849,7 +1849,7 @@ html {
         grid-template-columns: 15rem 15rem;
     -ms-grid-rows: 5rem 5rem;
         grid-template-rows: 5rem 5rem;
-    grid-row-gap: 0.5rem;
+    grid-row-gap: 2rem;
     grid-column-gap: 2rem;
     padding: 4rem 0;
     margin: 0 auto;
@@ -1860,6 +1860,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 1.3rem;
   }
 }
 
@@ -1939,7 +1940,7 @@ html {
   padding: 0.8rem 2rem;
   background-color: black;
   color: rgba(255, 255, 255, 0.8);
-  border-radius: 2rem;
+  border-radius: 2.4rem;
 }
 
 @media only screen and (max-width: 31em) {
@@ -1950,7 +1951,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0.8rem 1rem;
+    padding: 1.4rem 2rem;
   }
 }
 
@@ -2000,8 +2001,32 @@ html {
 .portfolio__filter--btn {
   background-color: rgba(211, 211, 211, 0.5);
   padding: 0.8rem 2rem;
-  border-radius: 2rem;
+  border-radius: 2.4rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 31em) {
+  .portfolio__filter--btn {
+    padding: 1.4rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .portfolio__filter--btn {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .portfolio__filter--btn {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .portfolio__filter--btn {
+    padding: 0.8rem 2rem;
+  }
 }
 
 .portfolio__video {
@@ -2019,18 +2044,21 @@ html {
 @media only screen and (max-width: 26.5625em) {
   .portfolio__video {
     padding: 2rem;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .portfolio__video {
     padding: 2rem;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .portfolio__video {
     padding: 2rem;
+    width: 100%;
   }
 }
 
