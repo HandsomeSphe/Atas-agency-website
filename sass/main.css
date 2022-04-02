@@ -2490,4 +2490,23 @@ html {
     font-size: 1.1rem;
   }
 }
+
+.footer {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  background-color: #414042;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 16rem 10rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+}
 /*# sourceMappingURL=main.css.map */

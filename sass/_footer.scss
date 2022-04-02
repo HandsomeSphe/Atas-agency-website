@@ -1,0 +1,19 @@
+//{}
+//t
+//y
+//
+
+.footer {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+
+  &__wrapper {
+    background-color: #414042;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 16rem 10rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+  }
+}
