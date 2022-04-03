@@ -2494,7 +2494,7 @@ html {
 .footer {
   width: 100%;
   height: auto;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .footer__wrapper {
@@ -2508,5 +2508,39 @@ html {
   padding: 3rem 16rem 10rem;
   margin: 0 1rem;
   border-radius: 0.5rem;
+}
+
+.footer__title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.address,
+.link__1,
+.link__2,
+.link__3,
+.link__4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.link__1,
+.link__2,
+.link__3,
+.link__4 {
+  cursor: pointer;
+}
+
+.copyrights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.copyrights > span {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
