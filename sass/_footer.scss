@@ -7,19 +7,73 @@
   width: 100%;
   height: auto;
   color: rgba(255, 255, 255, 0.95);
+  background-color: #414042;
+  margin-bottom: 5rem;
+  @include respond(tablet) {
+    width: 71rem;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+  @include respond(s-phone) {
+    width: 100%;
+  }
+  @include respond(xs-phone) {
+    width: 100%;
+  }
 
   &__wrapper {
-    background-color: #414042;
     display: flex;
     justify-content: space-between;
     padding: 3rem 16rem 10rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
+    @include respond(tablet) {
+      display: grid;
+      grid-template-columns: 17rem 17rem;
+      grid-template-rows: 17rem 17rem;
+      grid-row-gap: 2rem;
+      padding: 1rem 15rem;
+    }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    @include respond(s-phone) {
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    @include respond(xs-phone) {
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
   }
   &__title {
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 2rem;
+    @include respond(tablet) {
+      margin: 1.4rem 0;
+      font-size: 1.7rem;
+    }
+    @include respond(tab-port) {
+      margin: 4rem 0 1.1rem 0;
+      font-size: 1.3rem;
+    }
+    @include respond(s-phone) {
+      margin: 4rem 0 1rem 0;
+      font-size: 1.3rem;
+    }
+    @include respond(xs-phone) {
+      font-size: 1.3rem;
+      margin: 3rem 0 0.7rem 0;
+    }
   }
 }
 .address,
@@ -30,6 +84,30 @@
   font-size: 1.1rem;
   margin-bottom: 0.3rem;
   color: rgba(255, 255, 255, 0.85);
+  @include respond(tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.4rem;
+  }
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  @include respond(s-phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  @include respond(xs-phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.08rem;
+  }
 }
 .link__1,
 .link__2,
@@ -39,8 +117,14 @@
 }
 .copyrights {
   display: flex;
-  color: rgba(255, 255, 255, 0.95);
-  & > span {
-    color: red;
-  }
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+}
+.copy {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0 0.1rem;
 }
