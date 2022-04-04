@@ -30,10 +30,10 @@
     border-radius: 0.5rem;
     @include respond(tablet) {
       display: grid;
-      grid-template-columns: 17rem 17rem;
+      grid-template-columns: 20rem 20rem;
       grid-template-rows: 17rem 17rem;
       grid-row-gap: 2rem;
-      padding: 1rem 15rem;
+      padding: 1rem 7rem;
     }
     @include respond(tab-port) {
       display: flex;

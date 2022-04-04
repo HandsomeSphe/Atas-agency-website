@@ -2539,12 +2539,12 @@ html {
   .footer__wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 17rem 17rem;
-        grid-template-columns: 17rem 17rem;
+    -ms-grid-columns: 20rem 20rem;
+        grid-template-columns: 20rem 20rem;
     -ms-grid-rows: 17rem 17rem;
         grid-template-rows: 17rem 17rem;
     grid-row-gap: 2rem;
-    padding: 1rem 15rem;
+    padding: 1rem 7rem;
   }
 }
 
