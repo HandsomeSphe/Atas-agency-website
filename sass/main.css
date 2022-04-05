@@ -2747,6 +2747,37 @@ html {
   height: 50rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .contacts {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .contacts {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .contacts {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .contacts {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts {
+    height: auto;
+  }
+}
+
 .contacts__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2754,10 +2785,66 @@ html {
   padding: 1rem 10rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .contacts__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    pading: 1rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts__wrapper {
+    padding: 3rem;
+  }
+}
+
 .contacts__wrapper--form {
   margin-right: 7rem;
   border-right: 2px solid rgba(211, 211, 211, 0.4);
   padding-right: 7rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .contacts__wrapper--form {
+    border: none;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .contacts__wrapper--form {
+    border: none;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .contacts__wrapper--form {
+    border: none;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .contacts__wrapper--form {
+    border: none;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts__wrapper--form {
+    border: none;
+    margin: 0;
+    padding: 1rem;
+  }
 }
 
 .contacts__form--heading, .contacts__faq--heading {
@@ -2784,6 +2871,41 @@ html {
   height: 36rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .form {
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .form {
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .form {
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .form {
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .form {
+    width: 27rem;
+    height: 35rem;
+  }
+}
+
 .name__label,
 .email__label,
 .message__label {
@@ -2799,6 +2921,46 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .firstname,
+  .email {
+    width: 17rem;
+    height: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .firstname,
+  .email {
+    width: 17rem;
+    height: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .firstname,
+  .email {
+    width: 17rem;
+    height: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .firstname,
+  .email {
+    width: 17rem;
+    height: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .firstname,
+  .email {
+    width: 17rem;
+    height: 1.8rem;
+  }
 }
 
 .message {
@@ -2822,6 +2984,36 @@ html {
 
 .accordion {
   width: 53rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .accordion {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .accordion {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .accordion {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .accordion {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .accordion {
+    width: 20rem;
+  }
 }
 
 .accordion-header > .accordion-button {
