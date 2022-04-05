@@ -2741,4 +2741,95 @@ html {
   height: 1.3rem;
   margin: 0 0.1rem;
 }
+
+.contacts {
+  width: 100%;
+  height: 50rem;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 10rem;
+}
+
+.contacts__wrapper--form {
+  margin-right: 7rem;
+  border-right: 2px solid rgba(211, 211, 211, 0.4);
+  padding-right: 7rem;
+}
+
+.contacts__form--heading, .contacts__faq--heading {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 3rem 2rem;
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 30rem;
+  height: 36rem;
+}
+
+.name__label,
+.email__label,
+.message__label {
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.firstname,
+.email {
+  width: 23rem;
+  height: 2.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.message {
+  width: 23rem;
+  height: 13rem;
+  resize: none;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.submit__btn {
+  width: 23rem;
+  border: none;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.accordion {
+  width: 53rem;
+}
+
+.accordion-header > .accordion-button {
+  font-size: 1.3rem;
+  border: 0.5px solid lightgray;
+}
+
+.accordion-body {
+  font-size: 1.05rem;
+}
 /*# sourceMappingURL=main.css.map */
