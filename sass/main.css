@@ -2795,9 +2795,33 @@ html {
   }
 }
 
+@media only screen and (max-width: 26.5625em) {
+  .contacts__wrapper {
+    padding: 8rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .contacts__wrapper {
+    padding: 6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   .contacts__wrapper {
-    padding: 3rem;
+    padding: 4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2827,7 +2851,7 @@ html {
   .contacts__wrapper--form {
     border: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
   }
 }
 
@@ -2835,7 +2859,7 @@ html {
   .contacts__wrapper--form {
     border: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
   }
 }
 
@@ -2843,7 +2867,7 @@ html {
   .contacts__wrapper--form {
     border: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
   }
 }
 
@@ -2917,22 +2941,25 @@ html {
 
 @media only screen and (max-width: 26.5625em) {
   .form {
-    width: 20rem;
-    height: 25rem;
+    width: 32rem;
+    height: 37rem;
+    padding: 3rem 4.5rem;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .form {
-    width: 20rem;
-    height: 25rem;
+    width: 30rem;
+    height: 35rem;
+    padding: 3rem 3rem;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .form {
-    width: 27rem;
+    width: 28rem;
     height: 35rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -2972,16 +2999,16 @@ html {
 @media only screen and (max-width: 26.5625em) {
   .firstname,
   .email {
-    width: 17rem;
-    height: 1.8rem;
+    width: 23rem;
+    height: 3.2rem;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .firstname,
   .email {
-    width: 17rem;
-    height: 1.9rem;
+    width: 23rem;
+    height: 3rem;
   }
 }
 
@@ -3030,19 +3057,19 @@ html {
 
 @media only screen and (max-width: 26.5625em) {
   .accordion {
-    width: 20rem;
+    width: 32rem;
   }
 }
 
 @media only screen and (max-width: 23.4375em) {
   .accordion {
-    width: 20rem;
+    width: 30rem;
   }
 }
 
 @media only screen and (max-width: 20em) {
   .accordion {
-    width: 30rem;
+    width: 28rem;
   }
 }
 

@@ -30,11 +30,16 @@
     @include respond(tablet) {
     }
     @include respond(tab-port) {
+      padding: 8rem;
+      flex-direction: column;
     }
     @include respond(s-phone) {
+      padding: 6rem;
+      flex-direction: column;
     }
     @include respond(xs-phone) {
-      padding: 3rem;
+      padding: 4rem;
+      flex-direction: column;
     }
     &--form {
       margin-right: 7rem;
@@ -53,17 +58,17 @@
       @include respond(tab-port) {
         border: none;
         margin: 0;
-        padding: 1rem;
+        padding: 0;
       }
       @include respond(s-phone) {
         border: none;
         margin: 0;
-        padding: 1rem;
+        padding: 0;
       }
       @include respond(xs-phone) {
         border: none;
         margin: 0;
-        padding: 1rem;
+        padding: 0;
       }
     }
   }
@@ -108,16 +113,19 @@
     height: 25rem;
   }
   @include respond(tab-port) {
-    width: 20rem;
-    height: 25rem;
+    width: 32rem;
+    height: 37rem;
+    padding: 3rem 4.5rem;
   }
   @include respond(s-phone) {
-    width: 20rem;
-    height: 25rem;
+    width: 30rem;
+    height: 35rem;
+    padding: 3rem 3rem;
   }
   @include respond(xs-phone) {
-    width: 27rem;
+    width: 28rem;
     height: 35rem;
+    padding: 3rem 2rem;
   }
 }
 .name__label,
@@ -143,12 +151,12 @@
     height: 1.8rem;
   }
   @include respond(tab-port) {
-    width: 17rem;
-    height: 1.8rem;
+    width: 23rem;
+    height: 3.2rem;
   }
   @include respond(s-phone) {
-    width: 17rem;
-    height: 1.9rem;
+    width: 23rem;
+    height: 3rem;
   }
   @include respond(xs-phone) {
     width: 23rem;
@@ -181,13 +189,13 @@
     width: 20rem;
   }
   @include respond(tab-port) {
-    width: 20rem;
+    width: 32rem;
   }
   @include respond(s-phone) {
-    width: 20rem;
+    width: 30rem;
   }
   @include respond(xs-phone) {
-    width: 30rem;
+    width: 28rem;
   }
 }
 .accordion-header > .accordion-button {
