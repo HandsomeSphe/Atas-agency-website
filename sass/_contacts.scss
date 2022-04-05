@@ -73,6 +73,21 @@
     font-size: 2rem;
     font-weight: 600;
     margin: 2rem 0;
+    @include respond(tab-land) {
+      text-align: center;
+    }
+    @include respond(tablet) {
+      text-align: center;
+    }
+    @include respond(tab-port) {
+      text-align: center;
+    }
+    @include respond(s-phone) {
+      text-align: center;
+    }
+    @include respond(xs-phone) {
+      text-align: center;
+    }
   }
 }
 .form {
@@ -121,7 +136,7 @@
   margin-bottom: 1.5rem;
   @include respond(tab-land) {
     width: 17rem;
-    height: 1.8rem;
+    height: 2.4rem;
   }
   @include respond(tablet) {
     width: 17rem;
@@ -136,8 +151,8 @@
     height: 1.9rem;
   }
   @include respond(xs-phone) {
-    width: 17rem;
-    height: 1.8rem;
+    width: 23rem;
+    height: 3rem;
   }
 }
 .message {
@@ -172,7 +187,7 @@
     width: 20rem;
   }
   @include respond(xs-phone) {
-    width: 20rem;
+    width: 30rem;
   }
 }
 .accordion-header > .accordion-button {

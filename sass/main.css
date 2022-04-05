@@ -2854,6 +2854,36 @@ html {
   margin: 2rem 0;
 }
 
+@media only screen and (max-width: 48em) {
+  .contacts__form--heading, .contacts__faq--heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 31em) {
+  .contacts__form--heading, .contacts__faq--heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 26.5625em) {
+  .contacts__form--heading, .contacts__faq--heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  .contacts__form--heading, .contacts__faq--heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .contacts__form--heading, .contacts__faq--heading {
+    text-align: center;
+  }
+}
+
 .form {
   border-radius: 5px;
   padding: 3rem 2rem;
@@ -2927,7 +2957,7 @@ html {
   .firstname,
   .email {
     width: 17rem;
-    height: 1.8rem;
+    height: 2.4rem;
   }
 }
 
@@ -2958,8 +2988,8 @@ html {
 @media only screen and (max-width: 20em) {
   .firstname,
   .email {
-    width: 17rem;
-    height: 1.8rem;
+    width: 23rem;
+    height: 3rem;
   }
 }
 
@@ -3012,7 +3042,7 @@ html {
 
 @media only screen and (max-width: 20em) {
   .accordion {
-    width: 20rem;
+    width: 30rem;
   }
 }
 
