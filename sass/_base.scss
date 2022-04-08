@@ -100,7 +100,10 @@ html {
   }
 }
 @mixin cardDescription {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.05rem;
+  height: 100%;
+
   @include respond(tab-land) {
     font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.8);

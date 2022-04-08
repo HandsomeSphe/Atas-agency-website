@@ -3,22 +3,27 @@
 // y
 .contacts {
   width: 100%;
-  height: 50rem;
+  min-height: 50rem;
+  height: auto;
   @include respond(tab-land) {
     height: auto;
     padding-bottom: 2rem;
   }
   @include respond(tablet) {
     height: auto;
+    width: 71rem;
   }
   @include respond(tab-port) {
     height: auto;
+    width: 100%;
   }
   @include respond(s-phone) {
     height: auto;
+    width: 100%;
   }
   @include respond(xs-phone) {
     height: auto;
+    width: 100%;
   }
   &__wrapper {
     display: flex;
@@ -28,6 +33,8 @@
       pading: 1rem;
     }
     @include respond(tablet) {
+      padding: 1rem 18rem;
+      flex-direction: column;
     }
     @include respond(tab-port) {
       padding: 8rem;
@@ -109,8 +116,9 @@
     height: 25rem;
   }
   @include respond(tablet) {
-    width: 20rem;
-    height: 25rem;
+    width: 37rem;
+    height: 41rem;
+    padding: 3rem 5.4rem;
   }
   @include respond(tab-port) {
     width: 32rem;
@@ -147,8 +155,8 @@
     height: 2.4rem;
   }
   @include respond(tablet) {
-    width: 17rem;
-    height: 1.8rem;
+    width: 25rem;
+    height: 3.3rem;
   }
   @include respond(tab-port) {
     width: 23rem;
@@ -170,6 +178,26 @@
   margin-bottom: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  @include respond(tab-land) {
+    width: 17rem;
+    height: 14rem;
+  }
+  @include respond(tablet) {
+    width: 25rem;
+    height: 14rem;
+  }
+  @include respond(tab-port) {
+    width: 23rem;
+    height: 13rem;
+  }
+  @include respond(s-phone) {
+    width: 23rem;
+    height: 13rem;
+  }
+  @include respond(xs-phone) {
+    width: 23rem;
+    height: 13rem;
+  }
 }
 .submit__btn {
   width: 23rem;
@@ -179,6 +207,26 @@
   color: white;
   border-radius: 5px;
   font-size: 1.1rem;
+  @include respond(tab-land) {
+    width: 17rem;
+    height: 2.4rem;
+  }
+  @include respond(tablet) {
+    width: 25rem;
+    height: 3.4rem;
+  }
+  @include respond(tab-port) {
+    width: 23rem;
+    height: 2.7rem;
+  }
+  @include respond(s-phone) {
+    width: 23rem;
+    height: 2.7rem;
+  }
+  @include respond(xs-phone) {
+    width: 23rem;
+    height: 2.5rem;
+  }
 }
 .accordion {
   width: 53rem;
@@ -186,7 +234,7 @@
     width: 20rem;
   }
   @include respond(tablet) {
-    width: 20rem;
+    width: 37rem;
   }
   @include respond(tab-port) {
     width: 32rem;
