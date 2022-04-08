@@ -333,7 +333,7 @@
   border: none;
   color: rgba(255, 255, 255, 0.8);
   background-color: black;
-  font-size: 0.96rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: scale ease-in-out 0.5s;
   &:hover {
@@ -363,7 +363,7 @@
 .btn-2 {
   width: 12rem;
   height: 3.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
   border-bottom: 0.1rem solid black;
   cursor: pointer;
@@ -393,8 +393,8 @@
   }
 }
 .btn-3 {
-  width: 15.5rem;
-  font-size: 1.16rem;
+  width: 15rem;
+  font-size: 1.18rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

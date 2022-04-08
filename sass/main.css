@@ -594,7 +594,7 @@ html {
   border: none;
   color: rgba(255, 255, 255, 0.8);
   background-color: black;
-  font-size: 0.96rem;
+  font-size: 1rem;
   cursor: pointer;
   -webkit-transition: scale ease-in-out 0.5s;
   transition: scale ease-in-out 0.5s;
@@ -640,7 +640,7 @@ html {
 .btn-2 {
   width: 12rem;
   height: 3.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   border: none;
   border-bottom: 0.1rem solid black;
   cursor: pointer;
@@ -686,8 +686,8 @@ html {
 }
 
 .btn-3 {
-  width: 15.5rem;
-  font-size: 1.16rem;
+  width: 15rem;
+  font-size: 1.18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
